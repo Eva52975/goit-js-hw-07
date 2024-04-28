@@ -1,0 +1,238 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+}
+
+/* ================task-1===================== */
+.item {
+  list-style: none;
+  border-radius: 8px;
+  background: #f6f6fe;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.item > h2 {
+  color: #2e2f42;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0.96px;
+  margin-bottom: 16px;
+}
+
+.item > ul {
+  padding-left: 0;
+}
+
+.item > ul > li {
+  max-width: 360px;
+  height: 40px;
+  list-style: none;
+  border: 1px solid #212121;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  padding: 8px 16px;
+
+  color: #2e2f42;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.64px;
+}
+
+.item > ul > li:last-child {
+  margin-bottom: 0;
+}
+
+/* =================================== */
+
+/* ============task-2=============== */
+.gallery {
+  margin: 0 auto;
+  border-radius: 8px;
+  width: 1240px;
+  height: 748px;
+  padding: 50px 56px;
+  display: grid;
+  grid-template-columns: repeat(3, 360px);
+  gap: 48px 24px;
+  background-color: #ffffff;
+}
+
+.item-gallery {
+  list-style: none;
+}
+
+.item-gallery > img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+/* ===================================== */
+
+/* ==============task-3===================== */
+#name-input {
+  width: 360px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  padding: 8px 16px;
+}
+
+#name-input + h1 {
+  color: #2e2f42;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: 0.96px;
+}
+
+#name-input::placeholder {
+  color: #2e2f42;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+}
+
+/* ==================task-4==================== */
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form input {
+  width: 360px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+}
+
+.login-form > button {
+  width: 86px;
+  height: 40px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: #4e75ff;
+  border: none;
+  margin-top: 16px;
+
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+}
+
+.login-form > label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 8px;
+
+  color: #2e2f42;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+}
+
+/* ================================ */
+
+/* =================task-5==================== */
+
+.widget {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fafafa;
+  width: 345px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.widget > button {
+  border-radius: 8px;
+  background: #4e75ff;
+  padding: 8px 16px;
+  border: none;
+
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+}
+
+/* ==================================== */
+
+/* ============task-6==================== */
+#boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  padding: 32px;
+}
+
+#controls > input {
+  border-radius: 8px;
+  border: 1px solid #808080;
+  width: 150px;
+  padding: 8px 24px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 16px;
+}
+
+button[data-create] {
+  border-radius: 8px;
+  background: #4e75ff;
+  border: none;
+  width: 120px;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 16px;
+
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+}
+
+button[data-destroy] {
+  border-radius: 8px;
+  background: #ff4e4e;
+  border: none;
+  width: 120px;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+}
+
+/* =========================== */
